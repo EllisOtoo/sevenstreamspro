@@ -4,7 +4,6 @@ import styles from "../styles/Home.module.css";
 import Navbar from "./components/navbar";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import Services from "./components/services";
 
 export default function Home() {
   return (
@@ -19,15 +18,14 @@ export default function Home() {
         <Navbar />
         <Carousel showThumbs={false}>
           <div>
-            <img src="/haul01.jpeg" />
-            {/* <p className="legend">Legend 1</p> */}
-          </div>
-          <div>
             <img src="/haul02.jpeg" />
             {/* <p className="legend">Legend 1</p> */}
           </div>
+          <div>
+            <img src="/haul01.jpeg" />
+            {/* <p className="legend">Legend 1</p> */}
+          </div>
         </Carousel>
-        <Services />
         <div className="px-12 my-12">
           <h1 className="text-3xl font-bold underline">
             The SevenStreams Brand
