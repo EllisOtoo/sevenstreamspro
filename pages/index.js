@@ -1,6 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import Navbar from "./components/navbar";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
+import Services from "./components/services";
 
 export default function Home() {
   return (
@@ -12,15 +16,34 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Image
-          width={200}
-          height={50}
-          src={"/sevensStreamsLogo.png"}
-          alt="SevenStreams Logo"
-        ></Image>
-        <h1 className={styles.title}>Welcome to Seven Streams!</h1>
-
-        <p className={styles.description}>This site will open soon</p>
+        <Navbar />
+        <Carousel showThumbs={false}>
+          <div>
+            <img src="/haul01.jpeg" />
+            {/* <p className="legend">Legend 1</p> */}
+          </div>
+          <div>
+            <img src="/haul02.jpeg" />
+            {/* <p className="legend">Legend 1</p> */}
+          </div>
+        </Carousel>
+        <Services />
+        <div className="px-12 my-12">
+          <h1 className="text-3xl font-bold underline">
+            The SevenStreams Brand
+          </h1>
+          <p>
+            Seven Streams Limited is a legally registered transport and
+            logistics company which deals in the haulage of petroleum products
+            with a solid commitment to impeccable service and a flexible
+            approach to business. As a transformative company, we are com-
+            mitted to bringing job creation and empow- erment to help transform
+            the haulage indus- try, help its people advance and contribute to
+            the economic growth of Ghana. We are not a company that looks at the
+            bottom line first, we look at our people and how we can employ more
+            qualified personnel with sus- tainable employment.
+          </p>
+        </div>
       </main>
 
       <footer className={styles.footer}></footer>
