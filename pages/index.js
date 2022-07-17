@@ -12,6 +12,12 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <Image
+          width={200}
+          height={50}
+          src={"/sevensStreamsLogo.png"}
+          alt="SevenStreams Logo"
+        ></Image>
         <h1 className={styles.title}>Welcome to Seven Streams!</h1>
 
         <p className={styles.description}>This site will open soon</p>
