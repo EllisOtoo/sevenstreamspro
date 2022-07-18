@@ -10,7 +10,6 @@ import Paper from "@mui/material/Paper";
 import { Container } from "@mui/material";
 import Navbar from "./components/NavigationHeader.jsx";
 import ResponsiveAppBar from "./components/HeroSection";
-import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -21,7 +20,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <ResponsiveAppBar />
-      {/* <Footer /> */}
     </div>
   );
 }
