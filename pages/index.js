@@ -16,6 +16,7 @@ export default function Home() {
       </Head>
       <ResponsiveAppBar />
       <MUISection
+        cta={"Learn more"}
         src={"/haul02.jpeg"}
         title={"About Us"}
         mainText={

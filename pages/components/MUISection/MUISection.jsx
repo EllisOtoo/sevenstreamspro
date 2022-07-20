@@ -1,8 +1,16 @@
 import React from "react";
-import { Container, Box, Grid, Item, Paper, Typography } from "@mui/material";
+import {
+  Container,
+  Box,
+  Grid,
+  Item,
+  Paper,
+  Button,
+  Typography,
+} from "@mui/material";
 import Image from "next/image";
 
-function MUISection({ title, mainText, src }) {
+function MUISection({ title, mainText, src, cta }) {
   return (
     <Container maxWidth={"lg"}>
       <Box
@@ -17,9 +25,8 @@ function MUISection({ title, mainText, src }) {
         <Grid container spacing={2}>
           <Grid item xs={12} md={6}>
             <Box
-              className="relative w-full h-96"
+              className="relative w-auto h-96"
               sx={{
-                width: "100%",
                 backgroundColor: "silver",
               }}
             >
@@ -27,7 +34,8 @@ function MUISection({ title, mainText, src }) {
             </Box>
           </Grid>
           <Grid item xs={12} md={6}>
-            {mainText}
+            <Typography>{mainText}</Typography>
+            <Button variant="outlined">{cta}</Button>
           </Grid>
         </Grid>
       </Box>
