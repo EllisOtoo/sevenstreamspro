@@ -5,7 +5,8 @@ const Footer = () => {
     <div className=" bg-slate-100">
       <div className="flex flex-col md:flex-row  gap-12 w-8/12 max-h-max mx-auto pt-24 pb-12">
         <div className="md:w-1/12">
-          <ul className="divide-y divide-slate-300">
+          {/* divide-y divide-slate-300 */}
+          <ul className="">
             <li>Our Team</li>
             <li>Contact Us</li>
             <li>Home</li>
