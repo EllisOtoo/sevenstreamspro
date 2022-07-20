@@ -22,18 +22,18 @@ function MUISection({ title, mainText, src, cta }) {
             <Typography variant="h2">{title}</Typography>
           </Grid>
         </Grid>
-        <Grid container spacing={2}>
-          <Grid item xs={12} md={6}>
-            <Box
-              className="relative w-auto h-96"
-              sx={{
-                backgroundColor: "silver",
-              }}
-            >
-              <Image layout="fill" src={"/haul02.jpeg"} alt="" />
+        <Grid className="items-center" container spacing={2}>
+          <Grid item xs={12} md={4}>
+            <Box className="relative w-auto h-72" sx={{}}>
+              <Image
+                layout="fill"
+                src={"/haul02.jpeg"}
+                objectFit="contain"
+                alt=""
+              />
             </Box>
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={8}>
             <Typography>{mainText}</Typography>
             <Button variant="outlined">{cta}</Button>
           </Grid>
