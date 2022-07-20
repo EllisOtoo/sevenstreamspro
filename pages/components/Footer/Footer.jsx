@@ -1,4 +1,4 @@
-import { TextField, Typography } from "@mui/material";
+import { TextField, Typography, Stack, Divider } from "@mui/material";
 
 const Footer = () => {
   return (
@@ -14,12 +14,20 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="md:w-4/12">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-          praesentium quasi placeat totam earum corrupti sapiente quaerat
-          consectetur consequatur sed exercitationem facilis itaque, assumenda
-          nisi sequi et laudantium culpa ex.
-        </div>
+        <Stack direction={"column"} spacing={2} className="md:w-4/12">
+          <span>
+            <span className={"font-semibold"}>Location: </span> Adenta Lotto
+            Kiosk (Same office with Black Busters Family Media). <br /> Adenta,
+            Accra
+          </span>
+
+          <Divider />
+          <span>
+            {" "}
+            <span className="font-bold">Phone: </span> +233598104083 /
+            +233247783900 / +233543953808
+          </span>
+        </Stack>
 
         <div className="flex flex-col bg-slate-200 p-12 md:w-6/12">
           <Typography variant="h4">Contact Us</Typography>
