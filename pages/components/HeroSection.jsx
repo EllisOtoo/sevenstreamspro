@@ -7,14 +7,14 @@ import Image from "next/image";
 const navigation = [
   { name: "Home", href: "#" },
   { name: "Contact Us", href: "#" },
-  { name: "Marketplace", href: "#" },
   { name: "Company", href: "#" },
 ];
 
 export default function Example() {
   return (
     <div className="relative bg-white overflow-hidden">
-      <div className="max-w-7xl mx-auto">
+      {/*  //max-w-7xl */}
+      <div className="w-8/12 mx-auto">
         <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
           <svg
             className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
@@ -108,12 +108,6 @@ export default function Example() {
                       </a>
                     ))}
                   </div>
-                  <a
-                    href="#"
-                    className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
-                  >
-                    Log in
-                  </a>
                 </div>
               </Popover.Panel>
             </Transition>

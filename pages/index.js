@@ -10,6 +10,7 @@ import Paper from "@mui/material/Paper";
 import { Container } from "@mui/material";
 import Navbar from "./components/NavigationHeader.jsx";
 import ResponsiveAppBar from "./components/HeroSection";
+import Footer from "./components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -20,6 +21,38 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <ResponsiveAppBar />
+      <div className="w-8/12 max-h-max pb-12 mx-auto flex flex-col justify-center">
+        <h1 className="text-5xl my-12">Who We Are</h1>
+        <div className="flex-col md:flex  gap-12">
+          <div>
+            <Image
+              width={300}
+              height={300}
+              layout="fixed"
+              src={"/haul02.jpeg"}
+              alt=""
+            ></Image>
+          </div>
+
+          <div>
+            <p>
+              Seven Streams Limited is a legally registered transport and
+              logistics company which deals in the haulage of petroleum products
+              with a solid commitment to impeccable service and a flexible
+              approach to business.
+            </p>
+            <p>
+              As a transformative company, we are committed to bringing job
+              creation and empowerment to help transform the haulage industry,
+              help its people advance and contribute to the economic growth of
+              Ghana. We are not a company that looks at the bottom line first,
+              we look at our people and how we can employ more qualified
+              personnel with sustainable employment.
+            </p>
+          </div>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }
