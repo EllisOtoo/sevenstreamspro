@@ -1,14 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
-import Button from "@mui/material/Button";
-// import { Paper } from "@mui/material";
-import Box from "@mui/material/Box";
-import Paper from "@mui/material/Paper";
-import { Container } from "@mui/material";
-import Navbar from "./components/NavigationHeader.jsx";
 import ResponsiveAppBar from "./components/HeroSection";
 import Footer from "./components/Footer/Footer";
 
@@ -23,7 +15,7 @@ export default function Home() {
       <ResponsiveAppBar />
       <div className="w-8/12 max-h-max pb-12 mx-auto flex flex-col justify-center">
         <h1 className="text-5xl my-12">Who We Are</h1>
-        <div className="flex-col md:flex  gap-12">
+        <div className="flex flex-col md:flex-row gap-12">
           <div>
             <Image
               width={300}
