@@ -1,20 +1,45 @@
+import {
+  Container,
+  Box,
+  TextField,
+  Grid,
+  Item,
+  Paper,
+  Button,
+  Typography,
+} from "@mui/material";
+
 const Footer = () => {
   return (
     <div className=" bg-slate-100">
-      <div className="flex gap-32 w-10/12 max-h-max mx-auto pt-24 pb-12">
-        <div className="w-6/12 md: max-w-lg">
+      <div className="flex flex-col md:flex-row  gap-4 w-8/12 max-h-max mx-auto pt-24 pb-12">
+        <div className="md:w-2/12">
+          <ul>
+            <li>Our Team</li>
+            <li>Contact Us</li>
+            <li>Home</li>
+            <li>About</li>
+          </ul>
+        </div>
+        <div className="md:w-4/12">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
           praesentium quasi placeat totam earum corrupti sapiente quaerat
           consectetur consequatur sed exercitationem facilis itaque, assumenda
           nisi sequi et laudantium culpa ex.
         </div>
-        <div className="w-4/12">
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Our Team</li>
-            <li>Contact Us</li>
-          </ul>
+
+        <div className="flex flex-col bg-slate-200 p-12 md:w-6/12">
+          <Typography variant="h4">Contact Us</Typography>
+          <TextField
+            id="standard-basic"
+            label="Enter Your Name"
+            variant="standard"
+          />
+          <TextField
+            id="standard-basic"
+            label="Enter Your Contact No.:"
+            variant="standard"
+          />
         </div>
       </div>
     </div>
