@@ -26,7 +26,7 @@ export default function Home() {
             ></Image>
           </div>
 
-          <div>
+          <div className="flex flex-col gap-12">
             <p>
               Seven Streams Limited is a legally registered transport and
               logistics company which deals in the haulage of petroleum products
