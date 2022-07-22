@@ -6,12 +6,30 @@ import {
   Button,
   Box,
 } from "@mui/material";
+import { useState } from "react";
 
 const Footer = () => {
+  const [formField, setValue] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    message: "",
+  });
+
+  const clearForm = (e) => {
+    setValue({
+      name: "",
+      phone: "",
+      email: "",
+      message: "",
+    });
+    e.preventDefault();
+  };
+
   return (
-    <div className=" bg-slate-100">
+    <div className=" bg-slate-900" style={{ color: "white" }}>
       <div className="flex flex-col md:flex-row  gap-12 w-10/12 md:w-8/12 max-h-max mx-auto pt-24 pb-12">
-        <div className="md:w-1/12">
+        <div className="md:w-2/12">
           {/* divide-y divide-slate-300 */}
           <ul className="">
             <li>Our Team</li>
@@ -21,45 +39,124 @@ const Footer = () => {
           </ul>
         </div>
 
-        <Stack direction={"column"} spacing={2} className="md:w-4/12">
+        <Stack direction={"column"} spacing={2} className="md:w-full">
           <span>
-            <span className={"font-semibold"}>Location: </span> Adenta Lotto
-            Kiosk (Same office with Black Busters Family Media). <br /> Adenta,
-            Accra
+            <span className={"font-semibold"}>
+              Location: <br />{" "}
+            </span>{" "}
+            Adenta Lotto Kiosk <br /> (Same office with Black Busters Family
+            Media). <br /> Adenta, Accra
           </span>
 
-          <Divider />
+          <Divider color="blue" />
           <span>
             {" "}
-            <span className="font-bold">Phone: </span> +233598104083 /
-            +233247783900 / +233543953808
+            <span className="font-bold">
+              Phone: <br />{" "}
+            </span>{" "}
+            +233598104083 <br />
+            +233247783900 <br /> +233543953808
           </span>
         </Stack>
 
-        <div className="flex flex-col bg-slate-200 p-12 md:w-6/12">
+        <div className="w-full ">
           <Typography variant="h4">Contact Us</Typography>
-          <TextField id="standard-basic" label="Your Name" variant="standard" />
-          <TextField
-            id="standard-basic"
-            label="Your Phone"
-            variant="standard"
-          />
-          <TextField
-            id="standard-basic"
-            label="Your Email"
-            variant="standard"
-          />
-          <TextField
-            multiline
-            maxRows={4}
-            id="standard-basic"
-            label="Message"
-            variant="standard"
-          />
+          <form onSubmit={clearForm} action="/api/form" method="post">
+            <div>
+              <TextField
+                InputLabelProps={{
+                  style: { color: "#fff" },
+                }}
+                className="w-full"
+                value={formField.name}
+                InputProps={{
+                  style: { color: "#fff" },
+                }}
+                onChange={(e) => {
+                  setValue({
+                    ...formField,
+                    name: e.target.value,
+                  });
+                }}
+                name="name"
+                id="filled-basic"
+                label="Your Name"
+                variant="filled"
+              />
+              <TextField
+                InputLabelProps={{
+                  style: { color: "#fff" },
+                }}
+                InputProps={{
+                  style: { color: "#fff" },
+                }}
+                className="w-full"
+                name={"phoneNumber"}
+                id="filled-basic"
+                variant="filled"
+                label="Your Phone"
+                value={formField.phone}
+                onChange={(e) => {
+                  setValue({
+                    ...formField,
+                    phone: e.target.value,
+                  });
+                }}
+              />
+              <TextField
+                InputLabelProps={{
+                  style: { color: "#fff" },
+                }}
+                InputProps={{
+                  style: { color: "#fff" },
+                }}
+                className="w-full"
+                id="filled-basic"
+                variant="filled"
+                name="email"
+                label="Your Email"
+                value={formField.email}
+                onChange={(e) => {
+                  setValue({
+                    ...formField,
+                    email: e.target.value,
+                  });
+                }}
+              />
+              <TextField
+                InputLabelProps={{
+                  style: { color: "#fff" },
+                }}
+                InputProps={{
+                  style: { color: "#fff" },
+                }}
+                className="w-full"
+                multiline
+                maxRows={4}
+                name={"message"}
+                id="filled-basic"
+                variant="filled"
+                label="Message"
+                value={formField.message}
+                onChange={(e) => {
+                  setValue({
+                    ...formField,
+                    message: e.target.value,
+                  });
+                }}
+              />
+              <br />
+            </div>
 
-          <Button sx={{ marginTop: "20px" }} variant="outlined">
-            Submit
-          </Button>
+            <Button
+              // onClick={submit}
+              sx={{ marginTop: "20px" }}
+              variant="outlined"
+              type="submit"
+            >
+              Submit
+            </Button>
+          </form>
         </div>
       </div>
     </div>
