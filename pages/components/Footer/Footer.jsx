@@ -4,7 +4,9 @@ import {
   Stack,
   Divider,
   Button,
+  Paper,
   Box,
+  Fade,
 } from "@mui/material";
 import { useState } from "react";
 
@@ -15,6 +17,7 @@ const Footer = () => {
     email: "",
     message: "",
   });
+  const [submitted, setSubmitted] = useState(false);
 
   const clearForm = (e) => {
     setValue({
@@ -23,6 +26,7 @@ const Footer = () => {
       email: "",
       message: "",
     });
+    setSubmitted(true);
     e.preventDefault();
   };
 
@@ -147,7 +151,15 @@ const Footer = () => {
               />
               <br />
             </div>
-
+            {submitted && (
+              <Fade style={{ transitionDelay: "500ms" }} in={true}>
+                <Paper className="bg-green-500" elevation={3}>
+                  <Typography className="pl-4">
+                    Thank you for Submitting
+                  </Typography>
+                </Paper>
+              </Fade>
+            )}
             <Button
               // onClick={submit}
               sx={{ marginTop: "20px" }}
