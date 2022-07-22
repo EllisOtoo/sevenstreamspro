@@ -10,7 +10,7 @@ import {
 const Footer = () => {
   return (
     <div className=" bg-slate-100">
-      <div className="flex flex-col md:flex-row  gap-12 w-8/12 max-h-max mx-auto pt-24 pb-12">
+      <div className="flex flex-col md:flex-row  gap-12 w-10/12 md:w-8/12 max-h-max mx-auto pt-24 pb-12">
         <div className="md:w-1/12">
           {/* divide-y divide-slate-300 */}
           <ul className="">
