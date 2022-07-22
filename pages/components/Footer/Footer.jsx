@@ -1,4 +1,11 @@
-import { TextField, Typography, Stack, Divider } from "@mui/material";
+import {
+  TextField,
+  Typography,
+  Stack,
+  Divider,
+  Button,
+  Box,
+} from "@mui/material";
 
 const Footer = () => {
   return (
@@ -31,16 +38,28 @@ const Footer = () => {
 
         <div className="flex flex-col bg-slate-200 p-12 md:w-6/12">
           <Typography variant="h4">Contact Us</Typography>
+          <TextField id="standard-basic" label="Your Name" variant="standard" />
           <TextField
             id="standard-basic"
-            label="Enter Your Name"
+            label="Your Phone"
             variant="standard"
           />
           <TextField
             id="standard-basic"
-            label="Enter Your Contact No.:"
+            label="Your Email"
             variant="standard"
           />
+          <TextField
+            multiline
+            maxRows={4}
+            id="standard-basic"
+            label="Message"
+            variant="standard"
+          />
+
+          <Button sx={{ marginTop: "20px" }} variant="outlined">
+            Submit
+          </Button>
         </div>
       </div>
     </div>
