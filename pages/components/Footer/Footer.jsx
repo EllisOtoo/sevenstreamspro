@@ -153,11 +153,11 @@ const Footer = () => {
             </div>
             {submitted && (
               <Fade style={{ transitionDelay: "500ms" }} in={true}>
-                <Paper className="bg-green-500" elevation={3}>
+                <Box className="rounded-lg" bgcolor={"green"}>
                   <Typography className="pl-4">
                     Thank you for Submitting
                   </Typography>
-                </Paper>
+                </Box>
               </Fade>
             )}
             <Button
