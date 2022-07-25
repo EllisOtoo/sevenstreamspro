@@ -27,9 +27,7 @@ function LandingSection() {
           <p className="text-4xl">
             {" "}
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vel
-            quidem ipsam beatae ratione veniam nobis veritatis, aliquam
-            voluptatum accusantium minima sint animi autem quaerat eos
-            voluptate. Ipsum, ullam ab.
+            quidem ipsam beatae ratione veniam nobis veritatis,
           </p>
           <div className="flex">
             <TextField
