@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import styles from "../../../styles/Home.module.css";
 import {
   TextField,
   Typography,
@@ -21,7 +22,9 @@ function LandingSection() {
     <div className="bg-slate-100 h-screen flex items-center">
       <div className="flex flex-col md:flex-row w-8/12 mx-auto">
         <div className="w-12/12 md:w-6/12 flex flex-col gap-12">
-          <h2 className="text-4xl md:text-7xl font-bold">
+          <h2
+            className={`font-extrabold text-transparent text-7xl bg-clip-text bg-gradient-to-r from-indigo-500 to-sky-700`}
+          >
             No 1 Haulage Company
           </h2>
           <p className="text-4xl">
