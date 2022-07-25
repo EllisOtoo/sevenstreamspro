@@ -21,7 +21,7 @@ function LandingSection() {
     <div className="bg-slate-100 h-screen flex items-center">
       <div className="flex flex-col md:flex-row w-8/12 mx-auto">
         <div className="w-12/12 md:w-6/12 flex flex-col gap-12">
-          <h2 className="text-4xl md:text-7xl font-semibold">
+          <h2 className="text-4xl md:text-7xl font-bold">
             No 1 Haulage Company
           </h2>
           <p className="text-4xl">
