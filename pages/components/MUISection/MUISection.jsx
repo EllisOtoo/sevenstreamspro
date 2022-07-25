@@ -19,7 +19,7 @@ function MUISection({ title, mainText, src, cta }) {
       >
         <Grid container>
           <Grid item>
-            <Typography variant="h2">{title}</Typography>
+            <Typography variant="h3">{title}</Typography>
           </Grid>
         </Grid>
         <Grid className="items-center" container spacing={2}>
