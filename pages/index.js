@@ -32,7 +32,7 @@ export default function Home() {
         <ModernNav />
         <LandingSection />
 
-        <div className="my-12">
+        <div className="py-12  bg-gray-200">
           <h2
             style={{ color: "linear-gradient(to right, #553c9a 45%, #ee4b2b)" }}
             className="text-3xl pl-12 py-4"
