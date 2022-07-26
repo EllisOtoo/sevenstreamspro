@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "next/image";
 import styles from "../../../styles/Home.module.css";
 import {
   TextField,
@@ -22,6 +23,14 @@ function LandingSection() {
     <div className="py-12 flex items-center">
       <div className="flex flex-col md:flex-row w-9/12 mx-auto">
         <div className="w-12/12 md:w-6/12 flex flex-col gap-12">
+          <div style={{ width: "250px", height: "65px" }} className="relative">
+            <Image
+              layout="fill"
+              src="/sevensStreamsLogo.png"
+              alt="logo sevenstreams"
+            ></Image>
+          </div>
+
           <h2
             className={`font-extrabold text-transparent text-6xl bg-clip-text bg-gradient-to-r from-indigo-500 to-sky-700`}
           >

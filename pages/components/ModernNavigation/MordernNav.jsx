@@ -125,9 +125,9 @@ const ResponsiveAppBar = () => {
               </Button>
             ))}
           </Box>
-          <Button color="secondary" variant="outlined">
-            Contact Us
-          </Button>
+          {/* <button color="secondary" variant="outlined">
+            Contact
+          </button> */}
         </Toolbar>
       </Container>
     </AppBar>
