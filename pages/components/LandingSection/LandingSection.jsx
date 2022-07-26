@@ -20,17 +20,16 @@ function LandingSection() {
   });
   return (
     <div className="py-12 flex items-center">
-      <div className="flex flex-col md:flex-row w-10/12 mx-auto">
+      <div className="flex flex-col md:flex-row w-9/12 mx-auto">
         <div className="w-12/12 md:w-6/12 flex flex-col gap-12">
           <h2
             className={`font-extrabold text-transparent text-6xl bg-clip-text bg-gradient-to-r from-indigo-500 to-sky-700`}
           >
-            No 1 Haulage Company
+            <span className="text-7xl">No. 1 </span> Haulage Company
           </h2>
           <p className="text-4xl">
             {" "}
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vel
-            quidem ipsam beatae ratione veniam nobis veritatis,
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vel.
           </p>
           <div className="flex">
             <TextField
