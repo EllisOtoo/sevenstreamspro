@@ -38,7 +38,7 @@ const ResponsiveAppBar = () => {
   return (
     <AppBar
       sx={{
-        backgroundColor: "#21439b",
+        backgroundColor: "#4aa4df",
       }}
       position="static"
     >

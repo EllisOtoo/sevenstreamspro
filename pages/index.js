@@ -33,17 +33,20 @@ export default function Home() {
         <LandingSection />
 
         <div className="py-12  bg-gray-200">
-          <h2
-            style={{ color: "linear-gradient(to right, #553c9a 45%, #ee4b2b)" }}
-            className="text-3xl pl-12 py-4"
-          >
-            Seven Streams News
-          </h2>
-          <div className="flex flex-col mx-auto w-8/12 gap-2">
+          <div className="flex flex-col md:flex-row mx-auto w-8/12 gap-2">
+            <h2
+              style={{
+                color: "linear-gradient(to right, #553c9a 45%, #ee4b2b)",
+              }}
+              className="text-3xl pl-12 py-4"
+            >
+              Seven Streams News
+            </h2>
             {[
               "https://images.yen.com.gh/images/2fffb2680db922de.jpg",
-              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4TnmkTaFMrQNqBn3V7Ftn1_aZFph54w0NCZ0Azm-G3PmB2a6d2HUEm9kGFuTozjzj93o&usqp=CAU",
+              "https://mcdonaldscaffolding.com/wp-content/uploads/2020/09/maragaret-mcdonald-general-haulage-min.jpg",
               "https://4f2s6b1l8e0pe5cqg3beg6b2-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/shutterstock_1025490817-1.jpg",
+              "https://saidinalogistic.com/wp-content/uploads/2021/12/istockphoto-1130261613-612x612-1.jpg",
             ].map((item) => (
               <ServicesCard key={item} imgSrc={item} />
             ))}

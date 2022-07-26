@@ -23,7 +23,7 @@ function LandingSection() {
       <div className="flex flex-col md:flex-row w-8/12 mx-auto">
         <div className="w-12/12 md:w-6/12 flex flex-col gap-12">
           <h2
-            className={`font-extrabold text-transparent text-7xl bg-clip-text bg-gradient-to-r from-indigo-500 to-sky-700`}
+            className={`font-extrabold text-transparent text-6xl bg-clip-text bg-gradient-to-r from-indigo-500 to-sky-700`}
           >
             No 1 Haulage Company
           </h2>
