@@ -57,9 +57,7 @@ const ResponsiveAppBar = () => {
               color: "inherit",
               textDecoration: "none",
             }}
-          >
-            Seven Streams Pro
-          </Typography>
+          ></Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
@@ -111,9 +109,7 @@ const ResponsiveAppBar = () => {
               color: "inherit",
               textDecoration: "none",
             }}
-          >
-            SevenStreamsPro
-          </Typography>
+          ></Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
