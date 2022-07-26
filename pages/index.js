@@ -38,7 +38,7 @@ export default function Home() {
               style={{
                 color: "linear-gradient(to right, #553c9a 45%, #ee4b2b)",
               }}
-              className="text-3xl pl-12 py-4"
+              className=""
             >
               Seven Streams News
             </h2>

@@ -19,8 +19,8 @@ function LandingSection() {
     message: "",
   });
   return (
-    <div className=" h-screen flex items-center">
-      <div className="flex flex-col md:flex-row w-8/12 mx-auto">
+    <div className="py-12 flex items-center">
+      <div className="flex flex-col md:flex-row w-10/12 mx-auto">
         <div className="w-12/12 md:w-6/12 flex flex-col gap-12">
           <h2
             className={`font-extrabold text-transparent text-6xl bg-clip-text bg-gradient-to-r from-indigo-500 to-sky-700`}
