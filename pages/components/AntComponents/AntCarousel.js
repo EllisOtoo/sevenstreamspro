@@ -39,7 +39,7 @@ const App = () => {
           </Row>
         </div>
         <div className="py-12 px-12 text-white flex" style={contentStyle}>
-          <Row>
+          <Row gutter={16}>
             <Col span={8}>
               <Image
                 width={100}
