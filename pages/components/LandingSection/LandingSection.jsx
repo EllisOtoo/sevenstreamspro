@@ -28,6 +28,13 @@ function LandingSection() {
     >
       <div className="flex flex-col md:flex-row w-10/12 mx-auto">
         <div className="w-12/12 md:w-6/12 flex flex-col">
+          <div style={{ width: "250px", height: "65px" }} className="relative">
+            <Image
+              layout="fill"
+              src="/sevenstreamsLogo.png"
+              alt="logo sevenstreams"
+            ></Image>
+          </div>
           <h2 className={`font-extrabold text-white text-6xl`}>
             <span className="">No. 1 </span> Haulage Company
           </h2>
