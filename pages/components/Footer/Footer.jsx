@@ -64,7 +64,9 @@ const Footer = () => {
         </Stack>
 
         <div className="w-full ">
-          <Typography variant="h4">Contact Us</Typography>
+          <Typography color={"white"} variant="h4">
+            Contact Us
+          </Typography>
           <form onSubmit={clearForm} action="/api/form" method="post">
             <div>
               <TextField
