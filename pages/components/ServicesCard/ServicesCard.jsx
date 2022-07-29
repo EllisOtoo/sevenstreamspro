@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 
 export default function ActionAreaCard({
-  details: { description, role, imgSrc, memberName },
+  details: { description, role, memberName },
 }) {
   // console.log(details);
   return (
