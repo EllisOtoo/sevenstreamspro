@@ -13,7 +13,7 @@ import ServicesCard from "./components/ServicesCard/ServicesCard.jsx";
 import Slider from "./components/AntComponents/AntCarousel.js";
 import { DatePicker } from "antd";
 import AntdNavigation from "./components/AntComponents/AntNavigation.jsx";
-import { FeatureIcon } from "./components/index";
+import FeatureIcon from "./components/Atoms/FeatureIcon";
 import { Col, Row } from "antd";
 
 // const customTheme = createTheme({
