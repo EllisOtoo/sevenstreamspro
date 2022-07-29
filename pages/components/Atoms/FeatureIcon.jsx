@@ -3,8 +3,6 @@ import Image from "next/image";
 import { Col, Row } from "antd";
 
 function FeatureIcon({ imgSrc, title, color, description, caption }) {
-  console.log(color);
-
   return (
     <Col span={12} className={``}>
       <div className="flex gap-2">
