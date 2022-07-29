@@ -47,7 +47,7 @@ export default function Home() {
             imgSrc: "/Icons/HowWeWork/respect.png",
           },
           {
-            title: "Qaulity",
+            title: "Quality",
             color: "#f5ec3e",
             description:
               "We set high standards for the quality of all our activities.",
