@@ -10,7 +10,7 @@ function FeatureIcon({ imgSrc, title, color, description, caption }) {
       <div className="flex gap-2">
         <div className={`bg-[#f5ec3e]  h-[6rem] w-[6rem]`}>
           <div className={`relative h-[6rem] w-[6rem]`}>
-            <Image layout="fill" src={imgSrc} />
+            <Image layout="fill" src={imgSrc} alt="How we work principles" />
           </div>
         </div>
         <div>
