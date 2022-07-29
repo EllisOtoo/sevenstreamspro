@@ -39,15 +39,17 @@ export default function Home() {
       {/* <DatePicker /> */}
       <Slider />
       {/* <div className="flex flex-wrap w-10/12 gap-2"> */}
-
-      <Row className="md:w-8/12 py-12  px-2 mx-auto" gutter={[8, 4]}>
+      <div className="w-8/12 pl-4 pt-2 text-3xl">
+        <h2 className="font-black text-sky-500 ">How we work</h2>
+      </div>
+      <Row className="md:w-8/12  px-2 pb-8 mx-auto" gutter={[8, 4]}>
         {[
           {
             title: "Respect",
             color: "#f5ec3e",
             description:
               "We demand trust, integrity and mutual respect from ourselves and others. ",
-            imgSrc: "/Icons/HowWeWork/commitment.png",
+            imgSrc: "/Icons/HowWeWork/respect.png",
           },
           {
             title: "Qaulity",
@@ -68,7 +70,21 @@ export default function Home() {
             color: "#f5ec3e",
             description:
               "We take responsibility for our work and the environment in which we operate.",
-            imgSrc: "/Icons/HowWeWork/commitment.png",
+            imgSrc: `/Icons/HowWeWork/responsibility.png`,
+          },
+          {
+            title: "Effectiveness",
+            color: "#f5ec3e",
+            description:
+              "We are ambitious and consistently strive to achieve our goals",
+            imgSrc: `/Icons/HowWeWork/responsibility.png`,
+          },
+          {
+            title: "Professionalism",
+            color: "#f5ec3e",
+            description:
+              "We constantly improve our qualifications and are willing to share our experience",
+            imgSrc: `/Icons/HowWeWork/responsibility.png`,
           },
         ].map((feature) => (
           <FeatureIcon
@@ -95,12 +111,34 @@ export default function Home() {
 
         <div className="flex flex-row md:flex-row mx-auto w-10/12 justify-around flex-wrap gap-2">
           {[
-            "https://images.yen.com.gh/images/2fffb2680db922de.jpg",
-            "https://mcdonaldscaffolding.com/wp-content/uploads/2020/09/maragaret-mcdonald-general-haulage-min.jpg",
-            "https://4f2s6b1l8e0pe5cqg3beg6b2-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/shutterstock_1025490817-1.jpg",
-            "https://saidinalogistic.com/wp-content/uploads/2021/12/istockphoto-1130261613-612x612-1.jpg",
-          ].map((item) => (
-            <ServicesCard key={item} imgSrc={item} />
+            {
+              description:
+                " With over 10 years of experience in the field of Haulage, Gerald is competent in his field and has provided various services for several companies and private individuals who can attest to his high professional attitude and competence. He is efficient, hardworking, and always eager to see his team of professionals work hard and come out successfully in any service delivery. To see the company succeed and on top is his passion.",
+              imgSrc: "https://images.yen.com.gh/images/2fffb2680db922de.jpg",
+              memberName: "Gerald Wilson ",
+              role: "General Manager",
+            },
+            {
+              description:
+                " Proficient at creating and maintaining good business relationships with potential clients. Her expertise is in administrative management and marketing.",
+              imgSrc: "https://images.yen.com.gh/images/2fffb2680db922de.jpg",
+              memberName: "Karleen Wilson",
+              role: "Administrative Manager",
+            },
+            {
+              description:
+                " An expert with relevant skills in Business Development and Human Resource Management",
+              memberName: "Ben Oteng-Sekyere",
+              role: "Consultant",
+            },
+            {
+              description:
+                " A passionate enthusiast, with more than 7 years working experience in Business Development.",
+              memberName: "Frank Adontsri",
+              role: "Consultant",
+            },
+          ].map((details, index) => (
+            <ServicesCard key={index} details={details} />
           ))}
         </div>
       </div>
