@@ -14,11 +14,18 @@ export default function TeamCard({ description, imgSrc, role, memberName }) {
             <div className="mx-auto bg-sky-500 h-1"></div>
           </Grid>
         </Grid>
+        <CardMedia
+          component="img"
+          height="140"
+          image={imgSrc}
+          alt="green iguana"
+        />
         <CardContent>
           <Typography
             sx={{ margin: "0 0" }}
             gutterBottom
             variant="h5"
+            className="text-sky-800"
             component="div"
           >
             {memberName}
