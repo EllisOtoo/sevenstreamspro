@@ -7,7 +7,6 @@ import Footer from "./components/Footer/Footer";
 import ModernNav from "./components/ModernNavigation/MordernNav.jsx";
 
 import LandingSection from "./components/LandingSection/LandingSection";
-import ServicesCard from "./components/ServicesCard/ServicesCard.jsx";
 import Slider from "./components/AntComponents/AntCarousel.js";
 import FeatureIcon from "./components/Atoms/FeatureIcon.jsx";
 import { Col, Row } from "antd";
