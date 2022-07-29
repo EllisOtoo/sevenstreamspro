@@ -10,7 +10,7 @@ import LandingSection from "./components/LandingSection/LandingSection";
 import Slider from "./components/AntComponents/AntCarousel.js";
 import FeatureIcon from "./components/Atoms/FeatureIcon.jsx";
 import { Col, Row } from "antd";
-
+import TeamCard from "./components/TeamCard/TeamCard";
 // const customTheme = createTheme({
 //   palette: {
 //     secondary: {
@@ -72,14 +72,14 @@ export default function Home() {
             color: "#f5ec3e",
             description:
               "We are ambitious and consistently strive to achieve our goals",
-            imgSrc: `/Icons/HowWeWork/responsibility.png`,
+            imgSrc: `/Icons/HowWeWork/effectiveness.png`,
           },
           {
             title: "Professionalism",
             color: "#f5ec3e",
             description:
               "We constantly improve our qualifications and are willing to share our experience",
-            imgSrc: `/Icons/HowWeWork/responsibility.png`,
+            imgSrc: `/Icons/HowWeWork/professionalism.png`,
           },
         ].map((feature, index) => (
           <FeatureIcon
@@ -96,14 +96,52 @@ export default function Home() {
 
       {/* </div> */}
       <div className="py-12  bg-gray-200">
-        <h2
-          style={{
-            color: "linear-gradient(to right, #553c9a 45%, #ee4b2b)",
-          }}
-          className="mx-auto text-2xl w-10/12"
-        >
-          Meet our Team
+        <h2 className="font-black mx-auto w-10/12 text-3xl text-sky-500 ">
+          Meet Our Team
         </h2>
+
+        <div className="w-10/12 mx-auto flex flex-wrap gap-2">
+          {[
+            {
+              description:
+                " With over 10 years of experience in the field of Haulage, Gerald is competent in his field and has provided various services for several companies and private individuals who can attest to his high professional attitude and competence. He is efficient, hardworking, and always eager to see his team of professionals work hard and come out successfully in any service delivery. To see the company succeed and on top is his passion.",
+              imgSrc: "https://images.yen.com.gh/images/2fffb2680db922de.jpg",
+              memberName: "Gerald Wilson ",
+              role: "General Manager",
+            },
+            {
+              description:
+                " Proficient at creating and maintaining good business relationships with potential clients. Her expertise is in administrative management and marketing.",
+              imgSrc: "https://images.yen.com.gh/images/2fffb2680db922de.jpg",
+              memberName: "Karleen Wilson",
+              role: "Administrative Manager",
+            },
+            {
+              description:
+                " An expert with relevant skills in Business Development and Human Resource Management",
+              memberName: "Ben Oteng-Sekyere",
+              imgSrc: "https://images.yen.com.gh/images/2fffb2680db922de.jpg",
+
+              role: "Consultant",
+            },
+            {
+              description:
+                " A passionate enthusiast, with more than 7 years working experience in Business Development.",
+              memberName: "Frank Adontsri",
+              imgSrc: "https://images.yen.com.gh/images/2fffb2680db922de.jpg",
+
+              role: "Consultant",
+            },
+          ].map(({ description, role, memberName, imgSrc }, index) => (
+            <TeamCard
+              description={description}
+              imgSrc={imgSrc}
+              role={role}
+              memberName={memberName}
+              key={index}
+            />
+          ))}
+        </div>
       </div>
       <Footer />
     </div>
