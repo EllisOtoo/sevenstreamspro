@@ -33,6 +33,7 @@ const App = () => {
               />
             </Col>
             <Col span={16}>
+              <h2 className="tex-lg text-white text-sky-200">Our Vision</h2>
               To be one of the top bulk oil transportation companies in Ghana in
               terms of size, excellent service, and technology.
             </Col>
@@ -49,6 +50,7 @@ const App = () => {
               />
             </Col>
             <Col span={16}>
+              <h2 className="tex-lg text-white text-sky-200">Our Mision</h2>
               To consistently meet the logistical needs of our clients by
               providing comprehensive transport solutions with our wide array of
               fleet and full-service portfolio in haulage.{" "}

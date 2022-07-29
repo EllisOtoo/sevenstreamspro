@@ -46,7 +46,7 @@ export default function Home() {
           Seven Streams News
         </h2>
 
-        <div className="flex flex-row md:flex-row mx-auto w-10/12 flex-wrap gap-2">
+        <div className="flex flex-row md:flex-row mx-auto w-12/12 pl-10 flex-wrap gap-2">
           {[
             "https://images.yen.com.gh/images/2fffb2680db922de.jpg",
             "https://mcdonaldscaffolding.com/wp-content/uploads/2020/09/maragaret-mcdonald-general-haulage-min.jpg",
