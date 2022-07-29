@@ -13,7 +13,7 @@ function FeatureIcon({ imgSrc, title, color, description, caption, reverse }) {
         </div>
         <div className="flex flex-col items-center">
           <span className="text-2xl text-center"> {title}</span>
-          <div className="text-center"> {description}</div>
+          <div className="text-center w-8/12"> {description}</div>
         </div>
       </div>
       <Divider />
