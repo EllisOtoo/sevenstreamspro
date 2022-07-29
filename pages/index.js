@@ -34,8 +34,8 @@ export default function Home() {
       {/* <DatePicker /> */}
       <Slider />
       {/* <div className="flex flex-wrap w-10/12 gap-2"> */}
-      <div className="w-8/12 pl-4 pt-2 text-3xl">
-        <h2 className="font-black text-sky-500 ">How we work</h2>
+      <div className="w-full pt-2 text-3xl">
+        <h2 className="font-black text-center text-sky-500 ">How we work</h2>
       </div>
       <Row className="md:w-8/12  px-2 pb-8 mx-auto" gutter={[8, 4]}>
         {[
@@ -81,8 +81,9 @@ export default function Home() {
               "We constantly improve our qualifications and are willing to share our experience",
             imgSrc: `/Icons/HowWeWork/responsibility.png`,
           },
-        ].map((feature) => (
+        ].map((feature, index) => (
           <FeatureIcon
+            reverse={(index + 1) % 2 === 0 ? true : false}
             key={feature.title}
             caption={feature.caption}
             title={feature.title}

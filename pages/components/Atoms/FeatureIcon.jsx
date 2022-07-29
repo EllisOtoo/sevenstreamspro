@@ -1,21 +1,22 @@
 import React from "react";
 import Image from "next/image";
-import { Col, Row } from "antd";
+import { Col, Row, Divider } from "antd";
 
-function FeatureIcon({ imgSrc, title, color, description, caption }) {
+function FeatureIcon({ imgSrc, title, color, description, caption, reverse }) {
   return (
-    <Col span={12} className={``}>
-      <div className="flex gap-2">
+    <Col span={24} className={``}>
+      <div className={`flex flex-col items-center`}>
         <div className={`bg-[#f5ec3e]  h-[6rem] w-[6rem]`}>
           <div className={`relative h-[6rem] w-[6rem]`}>
             <Image layout="fill" src={imgSrc} alt="How we work principles" />
           </div>
         </div>
-        <div>
-          <span className="text-2xl"> {title}</span>
-          <div> {description}</div>
+        <div className="flex flex-col items-center">
+          <span className="text-2xl text-center"> {title}</span>
+          <div className="text-center"> {description}</div>
         </div>
       </div>
+      <Divider />
     </Col>
   );
 }
