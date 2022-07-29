@@ -13,6 +13,8 @@ import ServicesCard from "./components/ServicesCard/ServicesCard.jsx";
 import Slider from "./components/AntComponents/AntCarousel.js";
 import { DatePicker } from "antd";
 import AntdNavigation from "./components/AntComponents/AntNavigation.jsx";
+import { FeatureIcon } from "./components/index";
+import { Col, Row } from "antd";
 
 // const customTheme = createTheme({
 //   palette: {
@@ -36,17 +38,62 @@ export default function Home() {
       <LandingSection />
       {/* <DatePicker /> */}
       <Slider />
+      {/* <div className="flex flex-wrap w-10/12 gap-2"> */}
+
+      <Row className="md:w-8/12 py-12  px-2 mx-auto" gutter={[8, 4]}>
+        {[
+          {
+            title: "Respect",
+            color: "#f5ec3e",
+            description:
+              "We demand trust, integrity and mutual respect from ourselves and others. ",
+            imgSrc: "/Icons/HowWeWork/commitment.png",
+          },
+          {
+            title: "Qaulity",
+            color: "#f5ec3e",
+            description:
+              "We set high standards for the quality of all our activities.",
+            imgSrc: "/Icons/HowWeWork/quality.png",
+          },
+          {
+            title: "Commitment",
+            color: "#f5ec3e",
+            description:
+              "We are fully involved in every project, the hard work and success of our employees gives us and our clients the greatest satisfaction.  ",
+            imgSrc: "/Icons/HowWeWork/commitment.png",
+          },
+          {
+            title: "Responsibility",
+            color: "#f5ec3e",
+            description:
+              "We take responsibility for our work and the environment in which we operate.",
+            imgSrc: "/Icons/HowWeWork/commitment.png",
+          },
+        ].map((feature) => (
+          <FeatureIcon
+            key={feature.title}
+            caption={feature.caption}
+            title={feature.title}
+            color={feature.color}
+            description={feature.description}
+            imgSrc={feature.imgSrc}
+          />
+        ))}
+      </Row>
+
+      {/* </div> */}
       <div className="py-12  bg-gray-200">
         <h2
           style={{
             color: "linear-gradient(to right, #553c9a 45%, #ee4b2b)",
           }}
-          className="mx-auto text-lg w-10/12"
+          className="mx-auto text-2xl w-10/12"
         >
-          Seven Streams News
+          Meet our Team
         </h2>
 
-        <div className="flex flex-row md:flex-row mx-auto w-10/12 flex-wrap gap-2">
+        <div className="flex flex-row md:flex-row mx-auto w-10/12 justify-around flex-wrap gap-2">
           {[
             "https://images.yen.com.gh/images/2fffb2680db922de.jpg",
             "https://mcdonaldscaffolding.com/wp-content/uploads/2020/09/maragaret-mcdonald-general-haulage-min.jpg",
@@ -57,7 +104,6 @@ export default function Home() {
           ))}
         </div>
       </div>
-
       <Footer />
     </div>
   );
