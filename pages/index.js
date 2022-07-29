@@ -37,15 +37,16 @@ export default function Home() {
       {/* <DatePicker /> */}
       <Slider />
       <div className="py-12  bg-gray-200">
-        <div className="flex flex-col md:flex-row mx-auto w-8/12 gap-2">
-          <h2
-            style={{
-              color: "linear-gradient(to right, #553c9a 45%, #ee4b2b)",
-            }}
-            className=""
-          >
-            Seven Streams News
-          </h2>
+        <h2
+          style={{
+            color: "linear-gradient(to right, #553c9a 45%, #ee4b2b)",
+          }}
+          className="mx-auto text-lg w-10/12"
+        >
+          Seven Streams News
+        </h2>
+
+        <div className="flex flex-row md:flex-row mx-auto w-10/12 flex-wrap gap-2">
           {[
             "https://images.yen.com.gh/images/2fffb2680db922de.jpg",
             "https://mcdonaldscaffolding.com/wp-content/uploads/2020/09/maragaret-mcdonald-general-haulage-min.jpg",
