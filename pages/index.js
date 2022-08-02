@@ -37,7 +37,7 @@ export default function Home() {
       <div className="w-full pt-2 text-3xl">
         <h2 className="font-black text-center text-sky-500 ">How we work</h2>
       </div>
-      <Row className="md:w-8/12  px-2 pb-8 mx-auto" gutter={[8, 4]}>
+      <Row className="md:w-12/12  px-2 pb-8 mx-auto" gutter={[8, 4]}>
         {[
           {
             title: "Respect",
@@ -95,7 +95,7 @@ export default function Home() {
       </Row>
 
       {/* </div> */}
-      <div className="py-12  bg-gray-200">
+      {/*       <div className="py-12  bg-gray-200">
         <h2 className="font-black mx-auto w-10/12 text-3xl text-sky-500 ">
           Meet Our Team
         </h2>
@@ -145,7 +145,7 @@ export default function Home() {
             />
           ))}
         </div>
-      </div>
+      </div> */}
       <Footer />
     </div>
   );

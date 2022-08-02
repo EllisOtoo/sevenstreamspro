@@ -20,10 +20,10 @@ const App = () => {
     <div>
       <Carousel className="bg-slate-800" autoplay afterChange={onChange}>
         <div
-          className="py-12 px-12 text-white flex flex-row"
+          className="py-12 px-12 w-8/12 text-white flex flex-row"
           style={contentStyle}
         >
-          <Row gutter={16}>
+          <Row gutter={4} className="">
             <Col span={8}>
               <Image
                 width={100}
@@ -32,15 +32,15 @@ const App = () => {
                 alt={"visin"}
               />
             </Col>
-            <Col span={16}>
-              <h2 className="tex-lg text-white text-sky-200">Our Vision</h2>
+            <Col span={12}>
+              <h2 className="text-2xl text-white text-sky-200">Our Vision</h2>
               To be one of the top bulk oil transportation companies in Ghana in
               terms of size, excellent service, and technology.
             </Col>
           </Row>
         </div>
         <div className="py-12 px-12 text-white flex" style={contentStyle}>
-          <Row gutter={16}>
+          <Row gutter={4}>
             <Col span={8}>
               <Image
                 width={100}
@@ -49,8 +49,8 @@ const App = () => {
                 alt={"visin"}
               />
             </Col>
-            <Col span={16}>
-              <h2 className="tex-lg text-white text-sky-200">Our Mision</h2>
+            <Col span={12}>
+              <h2 className="text-2xl text-white text-sky-200">Our Mision</h2>
               To consistently meet the logistical needs of our clients by
               providing comprehensive transport solutions with our wide array of
               fleet and full-service portfolio in haulage.{" "}
