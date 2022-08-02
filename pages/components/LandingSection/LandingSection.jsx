@@ -23,7 +23,7 @@ function LandingSection() {
   });
   return (
     <div
-      className="py-12 bg-cover w-12/12 flex items-center priority bg-[url('/haul_Bg.jpg')]
+      className="py-12 bg-cover w-12/12 flex items-center priority bg-[url('/haulage_size.jpg')]
     "
     >
       <div className="flex flex-col md:flex-row w-10/12 mx-auto">
@@ -39,7 +39,6 @@ function LandingSection() {
             <span className="">No. 1 </span> Haulage Company
           </h2>
           <p className="text-4xl text-white">
-            {" "}
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vel.
           </p>
           <Divider color="white" />
