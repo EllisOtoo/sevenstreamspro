@@ -32,7 +32,7 @@ const App = () => {
                 alt={"visin"}
               />
             </Col>
-            <Col span={12}>
+            <Col span={16}>
               <h2 className="text-2xl text-white text-sky-200">Our Vision</h2>
               To be one of the top bulk oil transportation companies in Ghana in
               terms of size, excellent service, and technology.
@@ -49,7 +49,7 @@ const App = () => {
                 alt={"visin"}
               />
             </Col>
-            <Col span={12}>
+            <Col span={16}>
               <h2 className="text-2xl text-white text-sky-200">Our Mision</h2>
               To consistently meet the logistical needs of our clients by
               providing comprehensive transport solutions with our wide array of
