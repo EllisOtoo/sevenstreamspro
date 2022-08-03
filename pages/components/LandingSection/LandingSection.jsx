@@ -39,7 +39,10 @@ function LandingSection() {
             <span className="">No. 1 </span> Haulage Company
           </h2>
           <p className="text-4xl text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vel.
+            Seven Streams Limited is a legally registered transport and
+            logistics company which deals in the haulage of petroleum products
+            with a solid commitment to impeccable service and a flexible
+            approach to business.
           </p>
           {/*         <Divider color="white" />
           <Box className="flex bg-sky-100 my-12">
