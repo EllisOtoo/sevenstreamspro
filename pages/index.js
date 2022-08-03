@@ -6,6 +6,9 @@ import Footer from "./components/Footer/Footer";
 // import MUISection from "./components/MUISection/MUISection";
 import ModernNav from "./components/ModernNavigation/MordernNav.jsx";
 
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
+
 import LandingSection from "./components/LandingSection/LandingSection";
 import Slider from "./components/AntComponents/AntCarousel.js";
 import FeatureIcon from "./components/Atoms/FeatureIcon.jsx";
@@ -19,6 +22,39 @@ import TeamCard from "./components/TeamCard/TeamCard";
 //   },
 // });
 
+import SwipeableViews from "react-swipeable-views";
+
+const stylesBetter = {
+  slide: {
+    padding: 15,
+    minHeight: 100,
+    color: "#fff",
+  },
+  slide1: {
+    background: "#FEA900",
+  },
+  slide2: {
+    background: "#B3DC4A",
+  },
+  slide3: {
+    background: "#6AC0FF",
+  },
+};
+
+const MyComponent = () => (
+  <SwipeableViews>
+    <div style={Object.assign({}, stylesBetter.slide, stylesBetter.slide1)}>
+      slide n°1
+    </div>
+    <div style={Object.assign({}, stylesBetter.slide, stylesBetter.slide2)}>
+      slide n°2
+    </div>
+    <div style={Object.assign({}, stylesBetter.slide, stylesBetter.slide3)}>
+      slide n°3
+    </div>
+  </SwipeableViews>
+);
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -30,7 +66,8 @@ export default function Home() {
       {/* <ResponsiveAppBar /> */}
       <ModernNav />
       {/* <AntdNavigation /> */}
-      <LandingSection />
+      {/* <LandingSection /> */}
+      <MyComponent />
       {/* <DatePicker /> */}
       <Slider />
       {/* <div className="flex flex-wrap w-10/12 gap-2"> */}
@@ -95,57 +132,57 @@ export default function Home() {
       </Row>
 
       {/* </div> */}
-      {/*       <div className="py-12  bg-gray-200">
-        <h2 className="font-black mx-auto w-10/12 text-3xl text-sky-500 ">
-          Meet Our Team
-        </h2>
+      {/*
+        <div className="py-12  bg-gray-200">
+          <h2 className="font-black mx-auto w-10/12 text-3xl text-sky-500 ">
+            Meet Our Team
+          </h2>
+          <div className="w-10/12 mx-auto flex flex-wrap gap-2">
+            {[
+              {
+                description:
+                  " With over 10 years of experience in the field of Haulage, Gerald is competent in his field and has provided various services for several companies and private individuals who can attest to his high professional attitude and competence. He is efficient, hardworking, and always eager to see his team of professionals work hard and come out successfully in any service delivery. To see the company succeed and on top is his passion.",
+                imgSrc:
+                  "https://www.universityofcalifornia.edu/sites/default/files/black-man-suit.jpg",
+                memberName: "Gerald Wilson ",
+                role: "General Manager",
+              },
+              {
+                description:
+                  " Proficient at creating and maintaining good business relationships with potential clients. Her expertise is in administrative management and marketing.",
+                imgSrc:
+                  "https://media.heragenda.com/brand-img/wSjPVinZ2/0x0/wp-content/uploads/2019/12/woman-wearing-gray-notch-lapel-suit-jacket-2381069.jpg",
+                memberName: "Karleen Wilson",
+                role: "Administrative Manager",
+              },
+              {
+                description:
+                  " An expert with relevant skills in Business Development and Human Resource Management",
+                memberName: "Ben Oteng-Sekyere",
+                imgSrc:
+                  "https://whoswhoinblack.com/wp-content/uploads/2020/04/Whos-who-network.jpg",
+                role: "Consultant",
+              },
+              {
+                description:
+                  " A passionate enthusiast, with more than 7 years working experience in Business Development.",
+                memberName: "Frank Adontsri",
+                imgSrc:
+                  "https://a9p9n2x2.stackpathcdn.com/wp-content/blogs.dir/1/files/2019/06/iStock-518185032-e1560181491785.jpg",
 
-        <div className="w-10/12 mx-auto flex flex-wrap gap-2">
-          {[
-            {
-              description:
-                " With over 10 years of experience in the field of Haulage, Gerald is competent in his field and has provided various services for several companies and private individuals who can attest to his high professional attitude and competence. He is efficient, hardworking, and always eager to see his team of professionals work hard and come out successfully in any service delivery. To see the company succeed and on top is his passion.",
-              imgSrc:
-                "https://www.universityofcalifornia.edu/sites/default/files/black-man-suit.jpg",
-              memberName: "Gerald Wilson ",
-              role: "General Manager",
-            },
-            {
-              description:
-                " Proficient at creating and maintaining good business relationships with potential clients. Her expertise is in administrative management and marketing.",
-              imgSrc:
-                "https://media.heragenda.com/brand-img/wSjPVinZ2/0x0/wp-content/uploads/2019/12/woman-wearing-gray-notch-lapel-suit-jacket-2381069.jpg",
-              memberName: "Karleen Wilson",
-              role: "Administrative Manager",
-            },
-            {
-              description:
-                " An expert with relevant skills in Business Development and Human Resource Management",
-              memberName: "Ben Oteng-Sekyere",
-              imgSrc:
-                "https://whoswhoinblack.com/wp-content/uploads/2020/04/Whos-who-network.jpg",
-              role: "Consultant",
-            },
-            {
-              description:
-                " A passionate enthusiast, with more than 7 years working experience in Business Development.",
-              memberName: "Frank Adontsri",
-              imgSrc:
-                "https://a9p9n2x2.stackpathcdn.com/wp-content/blogs.dir/1/files/2019/06/iStock-518185032-e1560181491785.jpg",
-
-              role: "Consultant",
-            },
-          ].map(({ description, role, memberName, imgSrc }, index) => (
-            <TeamCard
-              description={description}
-              imgSrc={imgSrc}
-              role={role}
-              memberName={memberName}
-              key={index}
-            />
-          ))}
-        </div>
-      </div> */}
+                role: "Consultant",
+              },
+            ].map(({ description, role, memberName, imgSrc }, index) => (
+              <TeamCard
+                description={description}
+                imgSrc={imgSrc}
+                role={role}
+                memberName={memberName}
+                key={index}
+              />
+            ))}
+          </div>
+</div> */}
       <Footer />
     </div>
   );
