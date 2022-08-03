@@ -188,39 +188,33 @@ export default function Home() {
 </div> */}
 
       <BodySectionStyle01 />
-      <Row>
-        <Row className="my-12" gutter={8} justify="space-around">
-          <Col span={6} className="bg-[#95daf7]">
-            <div style={{ width: 120, height: 120 }} className="p-4  relative">
-              <Image
-                layout="fill"
-                src="/shield.png"
-                alt="We believe in"
-              ></Image>
-            </div>{" "}
-          </Col>
-          <Col span={12}>
-            <h2>
-              {" "}
-              <h2 className="font-black text-sky-500 text-3xl  ">
-                Why Choose Us
-              </h2>
+      <Row className="my-12" gutter={8} justify="space-around">
+        <Col span={6} className="bg-[#95daf7]">
+          <div style={{ width: 120, height: 120 }} className="p-4  relative">
+            <Image layout="fill" src="/shield.png" alt="We believe in"></Image>
+          </div>{" "}
+        </Col>
+        <Col span={12}>
+          <h2>
+            {" "}
+            <h2 className="font-black text-sky-500 text-3xl  ">
+              Why Choose Us
             </h2>
-            <ul
-              style={{
-                listStyleImage: "url(/bullet_2.png)",
-                paddingInlineStart: "1ch",
-              }}
-              className="text-xl md:text-3xl"
-            >
-              <li>We understand the needs of our clients</li>
-              <li>It is our social responsibility.</li>
-              <li>Comprehensive and dynamic range of services.</li>
-              <li>Flexible and partnership approach.</li>
-              <li>Global and local network of business partners</li>
-            </ul>
-          </Col>
-        </Row>
+          </h2>
+          <ul
+            style={{
+              listStyleImage: "url(/bullet_2.png)",
+              paddingInlineStart: "1ch",
+            }}
+            className="text-xl md:text-3xl"
+          >
+            <li>We understand the needs of our clients</li>
+            <li>It is our social responsibility.</li>
+            <li>Comprehensive and dynamic range of services.</li>
+            <li>Flexible and partnership approach.</li>
+            <li>Global and local network of business partners</li>
+          </ul>
+        </Col>
       </Row>
       <Footer />
     </div>
