@@ -8,7 +8,7 @@ import {
   Box,
   Fade,
 } from "@mui/material";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Footer = () => {
   const [formField, setValue] = useState({
@@ -18,6 +18,9 @@ const Footer = () => {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  useEffect(() => {
+    setTimeout(() => setSubmitted(false), 2000);
+  }, [submitted]);
 
   const clearForm = (e) => {
     setValue({
@@ -52,7 +55,7 @@ const Footer = () => {
             Media). <br /> Adenta, Accra
           </span>
 
-          <Divider color="blue" />
+          <Divider className="bg-[#4865b5]" />
           <span>
             {" "}
             <span className="font-bold">
@@ -63,7 +66,7 @@ const Footer = () => {
           </span>
         </Stack>
 
-        <div className="w-full ">
+        <div className="w-full border rounded-xl border-[#4865b5] p-4 ">
           <Typography color={"white"} variant="h4">
             Contact Us
           </Typography>

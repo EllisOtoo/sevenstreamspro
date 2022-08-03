@@ -27,7 +27,7 @@ const App = () => {
                 height={100}
                 // layout={"responsive"}
                 // layout="fill"
-                src={"/shared-vision.png"}
+                src={"/leadership_01.png"}
                 alt={"visin"}
               />
             </Col>

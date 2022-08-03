@@ -14,6 +14,7 @@ import Slider from "./components/AntComponents/AntCarousel.js";
 import FeatureIcon from "./components/Atoms/FeatureIcon.jsx";
 import { Col, Row } from "antd";
 import TeamCard from "./components/TeamCard/TeamCard";
+import BodySectionStyle01 from "./components/BodySection/BodySectionStyle01";
 // const customTheme = createTheme({
 //   palette: {
 //     secondary: {
@@ -184,12 +185,7 @@ export default function Home() {
           </div>
 </div> */}
 
-      <div className="flex">
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-      </div>
+      <BodySectionStyle01 />
 
       <Footer />
     </div>
