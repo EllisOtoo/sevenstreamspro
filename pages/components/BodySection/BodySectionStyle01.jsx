@@ -79,7 +79,7 @@ const BodySectionStyle01 = () => {
                 alt="We believe in"
               ></Image>
             </div>
-            <div className="">Adding values to our clients' needs</div>
+            <div className="">Adding values to our client&apos;s needs</div>
           </div>
         </Col>
       </Row>
