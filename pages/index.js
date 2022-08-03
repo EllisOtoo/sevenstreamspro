@@ -183,6 +183,14 @@ export default function Home() {
             ))}
           </div>
 </div> */}
+
+      <div className="flex">
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+      </div>
+
       <Footer />
     </div>
   );

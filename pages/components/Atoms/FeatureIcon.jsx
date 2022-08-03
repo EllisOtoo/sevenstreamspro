@@ -4,7 +4,7 @@ import { Col, Row, Divider } from "antd";
 
 function FeatureIcon({ imgSrc, title, color, description, caption, reverse }) {
   return (
-    <Col xs={{ span: 24 }} md={{ span: 6 }} className={``}>
+    <Col xs={{ span: 24 }} md={{ span: 8 }} className={``}>
       <div className={`flex flex-col items-center`}>
         <div className={`bg-[#f5ec3e]  h-[6rem] w-[6rem]`}>
           <div className={`relative h-[6rem] w-[6rem]`}>

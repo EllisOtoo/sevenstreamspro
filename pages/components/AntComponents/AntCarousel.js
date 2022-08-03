@@ -19,41 +19,47 @@ const App = () => {
   return (
     <div>
       <Carousel className="bg-slate-800" autoplay afterChange={onChange}>
-        <div
-          className="py-12 px-12 w-8/12 text-white flex flex-row"
-          style={contentStyle}
-        >
-          <Row gutter={4} className="">
-            <Col span={8}>
+        <div className="py-12">
+          <Row gutter={12} justify="center">
+            <Col span={4}>
               <Image
                 width={100}
                 height={100}
+                // layout={"responsive"}
+                // layout="fill"
                 src={"/shared-vision.png"}
                 alt={"visin"}
               />
             </Col>
-            <Col span={16}>
+            <Col span={12} style={{ color: "white" }}>
               <h2 className="text-2xl text-white text-sky-200">Our Vision</h2>
-              To be one of the top bulk oil transportation companies in Ghana in
-              terms of size, excellent service, and technology.
+              <p>
+                {" "}
+                To be one of the top bulk oil transportation companies in Ghana
+                in terms of size, excellent service, and technology.
+              </p>
             </Col>
           </Row>
         </div>
-        <div className="py-12 px-12 text-white flex" style={contentStyle}>
-          <Row gutter={4}>
-            <Col span={8}>
+        <div className="py-12">
+          <Row gutter={12} justify="center">
+            <Col span={4}>
               <Image
                 width={100}
                 height={100}
-                src={"/leadership_01.png"}
+                // layout={"responsive"}
+                // layout="fill"
+                src={"/shared-vision.png"}
                 alt={"visin"}
               />
             </Col>
-            <Col span={16}>
-              <h2 className="text-2xl text-white text-sky-200">Our Mision</h2>
-              To consistently meet the logistical needs of our clients by
-              providing comprehensive transport solutions with our wide array of
-              fleet and full-service portfolio in haulage.{" "}
+            <Col span={12} style={{ color: "white" }}>
+              <h2 className="text-2xl text-white text-sky-200">Our Mission</h2>
+              <p>
+                To consistently meet the logistical needs of our clients by
+                providing comprehensive transport solutions with our wide array
+                of fleet and full-service portfolio in haulage.
+              </p>
             </Col>
           </Row>
         </div>
