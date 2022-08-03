@@ -5,9 +5,9 @@ const BodySectionStyle01 = () => {
   return (
     <>
       <Row className="my-12" gutter={8} justify="space-around">
-        <Col span={6} className="bg-[#95daf7]">
-          <div>
-            <h2 className="text-3xl whitespace-normal md:text-5xl font-bold text-[#fff] ">
+        <Col xs={21} className="">
+          <div className="bg-sky-200 px-12 w-6/12">
+            <h2 className="text-3xl whitespace-normal md:text-5xl font-bold text-white ">
               Our keys for development
             </h2>
           </div>
