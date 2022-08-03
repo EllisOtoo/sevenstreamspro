@@ -36,7 +36,7 @@ const BodySectionStyle01 = () => {
             </h2>
           </div>{" "}
         </Col>
-        <Col xs={7}>
+        <Col xs={16} sm={7}>
           <div className="grid grid-flow-col gap-2">
             <div
               style={{ width: 50, height: 50 }}
@@ -52,7 +52,7 @@ const BodySectionStyle01 = () => {
           </div>
         </Col>
         {/* sm={4} md={6} lg={8} xl={10} */}
-        <Col xs={7}>
+        <Col xs={16} sm={7}>
           <div className="grid grid-flow-col gap-2">
             <div
               style={{ width: 50, height: 50 }}
@@ -67,7 +67,7 @@ const BodySectionStyle01 = () => {
             <div className="">Professionalism and ethics</div>
           </div>
         </Col>
-        <Col xs={7}>
+        <Col xs={16} sm={7}>
           <div className="grid grid-flow-col gap-2">
             <div
               style={{ width: 50, height: 50 }}
