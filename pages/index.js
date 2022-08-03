@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 // import SpreadSection from "./components/SpreadSection.jsx/SpreadSection";
 // import MUISection from "./components/MUISection/MUISection";
 import ModernNav from "./components/ModernNavigation/MordernNav.jsx";
+import Image from "next/image";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
@@ -15,6 +16,7 @@ import FeatureIcon from "./components/Atoms/FeatureIcon.jsx";
 import { Col, Row } from "antd";
 import TeamCard from "./components/TeamCard/TeamCard";
 import BodySectionStyle01 from "./components/BodySection/BodySectionStyle01";
+
 // const customTheme = createTheme({
 //   palette: {
 //     secondary: {
@@ -186,7 +188,40 @@ export default function Home() {
 </div> */}
 
       <BodySectionStyle01 />
-
+      <Row>
+        <Row className="my-12" gutter={8} justify="space-around">
+          <Col span={6} className="bg-[#95daf7]">
+            <div style={{ width: 120, height: 120 }} className="p-4  relative">
+              <Image
+                layout="fill"
+                src="/shield.png"
+                alt="We believe in"
+              ></Image>
+            </div>{" "}
+          </Col>
+          <Col span={12}>
+            <h2>
+              {" "}
+              <h2 className="font-black text-sky-500 text-3xl  ">
+                Why Choose Us
+              </h2>
+            </h2>
+            <ul
+              style={{
+                listStyleImage: "url(/bullet_2.png)",
+                paddingInlineStart: "1ch",
+              }}
+              className="text-xl md:text-3xl"
+            >
+              <li>We understand the needs of our clients</li>
+              <li>It is our social responsibility.</li>
+              <li>Comprehensive and dynamic range of services.</li>
+              <li>Flexible and partnership approach.</li>
+              <li>Global and local network of business partners</li>
+            </ul>
+          </Col>
+        </Row>
+      </Row>
       <Footer />
     </div>
   );
