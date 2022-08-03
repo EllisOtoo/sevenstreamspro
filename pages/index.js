@@ -66,8 +66,8 @@ export default function Home() {
       {/* <ResponsiveAppBar /> */}
       <ModernNav />
       {/* <AntdNavigation /> */}
-      {/* <LandingSection /> */}
-      <MyComponent />
+      <LandingSection />
+      {/* <MyComponent /> */}
       {/* <DatePicker /> */}
       <Slider />
       {/* <div className="flex flex-wrap w-10/12 gap-2"> */}

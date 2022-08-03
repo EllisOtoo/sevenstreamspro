@@ -41,7 +41,7 @@ function LandingSection() {
           <p className="text-4xl text-white">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vel.
           </p>
-          <Divider color="white" />
+          {/*         <Divider color="white" />
           <Box className="flex bg-sky-100 my-12">
             <TextField
               InputLabelProps={
@@ -70,7 +70,7 @@ function LandingSection() {
             <button className="inline-block px-6 py-2.5 bg-sky-500 text-white font-medium text-xs leading-tight uppercase  shadow-lg hover:bg-sky-200 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out ">
               Submit
             </button>
-          </Box>
+          </Box> */}
         </div>
         {/* hidden md:block v */}
       </div>
