@@ -153,20 +153,56 @@ export default function Home() {
         </Col>
       </Row>
 
-      <div className=" flex flex-col bg-gray-100 py-12">
-        <h2 className="font-black text-sky-500 text-center text-3xl">Team</h2>
-        <div className="flex flex-wrap justify-center gap-12 w-12/12">
-          <TeamCard imgSrc="/one.jpg" role={"Chief Executive Officer"} />
-          <TeamCard
-            imgSrc="/team/2.jpg"
-            role={"Chief Administrative Officer"}
-          />
-          <TeamCard imgSrc="/team/3.jpg" role={"Consultant"} />
-          <TeamCard imgSrc="/team/4.jpg" role={"Consultant"} />
-          <TeamCard
-            imgSrc="/team/5.jpg"
-            role={"Business Promotions Representative"}
-          />
+      <div className=" flex bg-sky-800 py-12 justify-around">
+        {/* <h2 className="font-black text-sky-500 text-center text-3xl">Team</h2> */}
+        <div className="flex flex-col gap-12 items-end">
+          <div className="flex gap-12">
+            <div className="flex flex-col items-start h-80 w-72">
+              <p className="text-5xl text-white font-bold">Team </p>
+              <p className="text-xl text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <TeamCard
+              imgSrc="/team/ceo.jpg"
+              role={"Chief Executive Officer"}
+              memberName={"Gerard Wilson"}
+            />
+            <TeamCard
+              imgSrc="/team/karleen.jpg"
+              memberName={"Karleen Wilson"}
+              role={"Chief Administrative Officer"}
+            />
+            <TeamCard
+              imgSrc="/team/chief_operation.jpg"
+              memberName={"Wonder Honu"}
+              role={"Chief Operations Officer"}
+            />
+          </div>
+          <div className="flex gap-12">
+            {" "}
+            <TeamCard
+              imgSrc="/team/consultant_one.jpg"
+              role={"Consultant"}
+              memberName={"Ben Oteng Sekyere"}
+            />
+            <TeamCard
+              imgSrc="/team/consultant_two.jpg"
+              memberName={"Frank Say-on Adontsri"}
+              role={"Business Promotions Representative"}
+            />
+            <TeamCard
+              imgSrc="/team/chief_operations.jpg"
+              role={"Chief Operations Officer"}
+              memberName={"Bright Honu"}
+            />
+            <TeamCard
+              memberName={""}
+              imgSrc="/team/Business_Promotions.jpg"
+              role={"Business Promotions Representative"}
+            />{" "}
+          </div>
         </div>
       </div>
 

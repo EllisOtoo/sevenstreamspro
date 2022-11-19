@@ -11,7 +11,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 export default function TeamCard({ description, imgSrc, role, memberName }) {
   const matches = useMediaQuery("(min-width: 600px)");
   return (
-    <Card sx={{ maxWidth: matches ? 250 : 200 }}>
+    <Card sx={{ maxWidth: matches ? 300 : 200 }}>
       <CardActionArea>
         <Grid container spacing={2}>
           <Grid item xs={12}>
