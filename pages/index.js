@@ -157,11 +157,14 @@ export default function Home() {
         <h2 className="font-black text-sky-500 text-center text-3xl">Team</h2>
         <div className="flex flex-wrap justify-center gap-12 w-12/12">
           <TeamCard imgSrc="/one.jpg" role={"Chief Executive Officer"} />
-          <TeamCard imgSrc="/one.jpg" role={"Chief Administrative Officer"} />
-          <TeamCard imgSrc="/one.jpg" role={"Consultant"} />
-          <TeamCard imgSrc="/one.jpg" role={"Consultant"} />
           <TeamCard
-            imgSrc="/one.jpg"
+            imgSrc="/team/2.jpg"
+            role={"Chief Administrative Officer"}
+          />
+          <TeamCard imgSrc="/team/3.jpg" role={"Consultant"} />
+          <TeamCard imgSrc="/team/4.jpg" role={"Consultant"} />
+          <TeamCard
+            imgSrc="/team/5.jpg"
             role={"Business Promotions Representative"}
           />
         </div>

@@ -4,11 +4,14 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea, Grid } from "@mui/material";
+import useMediaQuery from "@mui/material/useMediaQuery";
+
 // import imageOne from "./../assets/one.jpg";
 
 export default function TeamCard({ description, imgSrc, role, memberName }) {
+  const matches = useMediaQuery("(min-width: 600px)");
   return (
-    <Card sx={{ maxWidth: 200 }}>
+    <Card sx={{ maxWidth: matches ? 250 : 200 }}>
       <CardActionArea>
         <Grid container spacing={2}>
           <Grid item xs={12}>
