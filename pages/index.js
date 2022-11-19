@@ -159,10 +159,10 @@ export default function Home() {
           <div className="flex gap-12">
             <div className="flex flex-col items-start h-80 w-72">
               <p className="text-5xl text-white font-bold">Team </p>
-              <p className="text-xl text-white">
+              {/*  <p className="text-xl text-white">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
+              </p> */}
             </div>
             <TeamCard
               imgSrc="/team/ceo.jpg"
