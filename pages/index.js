@@ -16,7 +16,12 @@ import FeatureIcon from "./components/Atoms/FeatureIcon.jsx";
 import { Col, Row, Typography } from "antd";
 import TeamCard from "./components/TeamCard/TeamCard";
 import BodySectionStyle01 from "./components/BodySection/BodySectionStyle01";
+import Card from "@mui/material/Card";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import { CardActionArea, Grid } from "@mui/material";
 // const customTheme = createTheme({
 //   palette: {
 //     secondary: {
@@ -59,6 +64,8 @@ const MyComponent = () => (
 );
 
 export default function Home() {
+  const matches = useMediaQuery("(min-width: 600px)");
+
   return (
     <div className={styles.container}>
       <Head>
@@ -157,13 +164,20 @@ export default function Home() {
         {/* <h2 className="font-black text-sky-500 text-center text-3xl">Team</h2> */}
         <div className="flex flex-col gap-12 items-center md:items-end">
           <div className="flex flex-col md:flex-row gap-12">
-            <div className="flex flex-col items-start h-80 w-72">
+            {/* <div className="flex flex-col items-start h-80 w-72">
               <p className="text-5xl text-white font-bold">Team </p>
               <p className="text-xl text-white">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-            </div>
+            </div> */}
+            <Card sx={{ maxWidth: matches ? 300 : 200 }}>
+              <p className="text-5xl font-bold">Team </p>
+              <p className="text-xl ">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </Card>
             <TeamCard
               imgSrc="/team/ceo.jpg"
               role={"Chief Executive Officer"}
@@ -185,16 +199,16 @@ export default function Home() {
             <TeamCard
               imgSrc="/team/consultant_one.jpg"
               role={"Consultant"}
-              memberName={"Ben Oteng Sekyere"}
+              memberName={"Ben Oteng-Sekyere"}
             />
             <TeamCard
               imgSrc="/team/consultant_two.jpg"
               memberName={"Frank Say-on Adontsri"}
-              role={"Business Promotions Representative"}
+              role={"Consultant"}
             />
             <TeamCard
               imgSrc="/team/chief_operations.jpg"
-              role={"Chief Operations Officer"}
+              role={"Operations Manager"}
               memberName={"Bright Honu"}
             />
             <TeamCard
