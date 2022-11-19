@@ -180,7 +180,7 @@ export default function Home() {
               role={"Chief Operations Officer"}
             />
           </div>
-          <div className="flex gap-12">
+          <div className="flex flex-col md:flex-row gap-12">
             {" "}
             <TeamCard
               imgSrc="/team/consultant_one.jpg"
